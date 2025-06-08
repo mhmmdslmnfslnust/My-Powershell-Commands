@@ -9,6 +9,7 @@ This repository contains helpful PowerShell functions to improve command-line na
   - [count-lines - Code Line Counter](#count-lines---code-line-counter)
 - [Installation](#installation)
 - [Benefits](#benefits)
+- [Requirements](#requirements)
 
 ## Functions
 
@@ -34,19 +35,22 @@ This function displays a numbered list of all subdirectories in the current dire
 
 ![cdx function demonstration](images/cdx-demo.jpeg)
 
-### `Count-Lines` - Code Line Counter
+### `count-lines` - Code Line Counter
 
-This script counts the total number of lines in web development files within the current directory and its subdirectories.
+This function counts the total number of lines in web development files within the current directory and its subdirectories.
 
 #### How to use:
 1. Navigate to your project directory in PowerShell
-2. Run the `Count-Lines.ps1` script
-3. View the breakdown of line counts by file extension and the total count
+2. Type `count-lines` in your terminal
+3. View the color-coded breakdown of line counts by file extension and the total count
 
 #### Features:
 - Counts lines in JS, JSX, TS, TSX, CSS, SCSS, and HTML files
 - Automatically excludes files in node_modules directories
 - Shows individual counts per file type and a grand total
+- Color-coded output for better readability
+
+![count-lines function demonstration](images/count-lines-demo.jpeg)
 
 ## Installation
 
@@ -79,3 +83,8 @@ To use these functions in your PowerShell profile:
 - No more typing long file or directory names with tab completion
 - Quickly see all available files or directories in the current location
 - Simple numbered selection makes navigation faster
+
+## Requirements
+
+- Windows PowerShell 5.1 or PowerShell Core 6.0+
+- File execution policy that allows running scripts
