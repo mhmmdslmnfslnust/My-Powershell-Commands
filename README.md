@@ -6,6 +6,7 @@ This repository contains helpful PowerShell functions to improve command-line na
 - [Functions](#functions)
   - [openf - Interactive File Opener](#openf---interactive-file-opener)
   - [cdx - Interactive Directory Navigator](#cdx---interactive-directory-navigator)
+  - [count-lines - Code Line Counter](#count-lines---code-line-counter)
 - [Installation](#installation)
 - [Benefits](#benefits)
 
@@ -33,6 +34,20 @@ This function displays a numbered list of all subdirectories in the current dire
 
 ![cdx function demonstration](images/cdx-demo.jpeg)
 
+### `Count-Lines` - Code Line Counter
+
+This script counts the total number of lines in web development files within the current directory and its subdirectories.
+
+#### How to use:
+1. Navigate to your project directory in PowerShell
+2. Run the `Count-Lines.ps1` script
+3. View the breakdown of line counts by file extension and the total count
+
+#### Features:
+- Counts lines in JS, JSX, TS, TSX, CSS, SCSS, and HTML files
+- Automatically excludes files in node_modules directories
+- Shows individual counts per file type and a grand total
+
 ## Installation
 
 To use these functions in your PowerShell profile:
@@ -49,6 +64,9 @@ To use these functions in your PowerShell profile:
    
    # Load cdx function
    . "PATH_TO_SCRIPT\Change-Directory.ps1"
+
+   # Load Count-Lines script
+   . "PATH_TO_SCRIPT\Count-Lines.ps1"
    ```
 4. Replace `PATH_TO_SCRIPT` with the actual path where you saved the scripts
 5. Restart PowerShell or reload your profile with:
