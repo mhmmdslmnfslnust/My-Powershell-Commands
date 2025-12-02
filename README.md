@@ -37,18 +37,18 @@ This function displays a numbered list of all subdirectories in the current dire
 
 ### `count-lines` - Code Line Counter
 
-This function counts the total number of lines in web development files within the current directory and its subdirectories.
+This function counts the total number of lines in development files within the current directory and its subdirectories. Suitable for multi-language projects.
 
 #### How to use:
 1. Navigate to your project directory in PowerShell
 2. Type `count-lines` in your terminal
-3. View the color-coded breakdown of line counts by file extension and the total count
+3. View the breakdown of line counts by file extension and the total count
 
 #### Features:
-- Counts lines in JS, JSX, TS, TSX, CSS, SCSS, and HTML files
-- Automatically excludes files in node_modules directories
+- Supports 30+ file types across multiple programming languages
+- Counts web (JS, TS, CSS, HTML), backend (Python, Java, C#, Go, Rust), mobile (Swift, Dart, Kotlin), and config files
+- Automatically excludes build folders: node_modules, dist, build, out, .git
 - Shows individual counts per file type and a grand total
-- Color-coded output for better readability
 
 ![count-lines function demonstration](images/count-lines-demo.jpeg)
 
@@ -69,7 +69,7 @@ To use these functions in your PowerShell profile:
    # Load cdx function
    . "PATH_TO_SCRIPT\Change-Directory.ps1"
 
-   # Load Count-Lines script
+   # Load count-lines function
    . "PATH_TO_SCRIPT\Count-Lines.ps1"
    ```
 4. Replace `PATH_TO_SCRIPT` with the actual path where you saved the scripts
